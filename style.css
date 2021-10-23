@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('./fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+p, span {
+    font-family: Rubik;
+    color: white;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 80%;
+}
+
+.item {
+    border-radius: 15px;
+}
+
+.large {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.profile {
+    border-radius: 15px;
+    background-color: hsl(246, 80%, 60%);
+    padding: 10%;
+}
+
+.profile img {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.report {
+    font-weight: 300;
+    font-size: 13px;
+    margin: 30px 0 0;
+}
+
+.username {
+    font-size: 38px;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+.navs {
+    padding: 10px;
+}
+
+.navlink {
+    margin: 10px 25px;
+    font-size: 14px;
+    color: hsl(235, 45%, 61%);
+    display: inline-block;
+    transition: color 0.25s;
+}
+
+.navlink:hover {
+    cursor: pointer;
+    color: white;
+}
