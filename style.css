@@ -159,6 +159,7 @@ main {
     margin: 0 0 20px;
     font-size: 14px;
     font-weight: 300;
+    color: hsl(252, 79%, 87%);
 }
 
 @media(max-width: 900px) {
