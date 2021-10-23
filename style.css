@@ -219,8 +219,12 @@ main {
         justify-content: space-between;
     }
 
+    .current {
+        font-size: 30px;
+    }
+
     .previous {
         margin: 0;
-        font-size: 16px;
+        font-size: 15px;
     }
 }
