@@ -25,7 +25,7 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
     grid-auto-rows: minmax(100px, auto);
     width: 80%;
 }
@@ -78,4 +78,53 @@ main {
 .navlink:hover {
     cursor: pointer;
     color: white;
+}
+
+.short {
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.one {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url('./images/icon-work.svg');
+}
+
+.data {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    height: 80%;
+}
+
+.top {
+    padding: 20px 10%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options:hover {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+.texts {
+    padding: 10px 10%;
+}
+
+.current {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.previous {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color:hsl(235, 45%, 61%);
 }
