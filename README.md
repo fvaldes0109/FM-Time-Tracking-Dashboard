@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: <https://www.frontendmentor.io/solutions/solved-using-grid-and-flexbox-dgzamr9MW>
+- Live Site URL: <https://fvaldes0109.github.io/FM-Time-Tracking-Dashboard>
 
 ## My process
 
