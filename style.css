@@ -26,7 +26,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(150px, auto);
     width: 80%;
 }
 
@@ -85,6 +85,8 @@ main {
     background-position: right top;
     display: flex;
     flex-direction: column-reverse;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .one {
@@ -157,4 +159,67 @@ main {
     margin: 0 0 20px;
     font-size: 14px;
     font-weight: 300;
+}
+
+@media(max-width: 900px) {
+    main {
+        width: 95%;
+    }
+
+    .username {
+        font-size: 30px;
+    }
+
+    .current {
+        font-size: 38px;
+    }
+
+    .previous {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 650px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .large {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .profile {
+        padding: 20px 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .user {
+        margin: 0 5%;
+    }
+
+    .navs {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .line-end {
+        display: none;
+    }
+
+    .data {
+        height: 75%;
+    }
+
+    .texts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .previous {
+        margin: 0;
+        font-size: 16px;
+    }
 }
